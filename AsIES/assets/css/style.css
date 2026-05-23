@@ -1,0 +1,114 @@
+/* assets/css/style.css */
+
+/* Importamos la fuente Inter con más grosores para jugar con la jerarquía visual */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif !important;
+    background-color: #F7F5F0 !important; /* Tu Beige elegante para el fondo */
+    color: #464543; /* Tu Gris Pizarra para el texto */
+}
+
+/* --- BOTONES PREMIUM --- */
+.btn-primary {
+    background-color: #464543 !important;
+    border-color: #464543 !important;
+    color: #ffffff !important;
+    border-radius: 8px; /* Bordes un poco más cuadrados y modernos */
+    padding: 12px 20px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease; /* Animación suave */
+}
+
+.btn-primary:hover {
+    background-color: #2c2b2a !important;
+    transform: translateY(-2px); /* El botón "flota" un poco al pasar el ratón */
+    box-shadow: 0 4px 12px rgba(70, 69, 67, 0.2);
+}
+
+/* --- TARJETAS (CARDS) ESTILO MINIMALISTA --- */
+/* Adiós a las cabeceras de colores fuertes. Hola a la limpieza. */
+.card {
+    border: 1px solid rgba(70, 69, 67, 0.08) !important; /* Borde súper sutil */
+    border-radius: 16px; /* Curva más pronunciada y actual */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03) !important; /* Sombra muy difuminada */
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #ffffff !important; /* Cabecera blanca, se funde con la tarjeta */
+    color: #464543 !important;
+    border-bottom: 1px solid rgba(70, 69, 67, 0.06);
+    padding: 1.5rem 2rem 1rem 2rem;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* --- INPUTS DE FORMULARIO --- */
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 12px 15px;
+    background-color: #fafafa; /* Fondo ligerísimamente gris para que destaque sobre el blanco */
+    color: #464543;
+    transition: all 0.2s;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #464543;
+    box-shadow: 0 0 0 3px rgba(70, 69, 67, 0.1); /* Anillo de enfoque elegante */
+    background-color: #ffffff;
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #464543;
+    margin-bottom: 0.5rem;
+}
+
+/* --- NAVBAR (MENÚ) --- */
+.navbar {
+    background-color: #ffffff !important; /* Menú blanco para que el logo respire bien */
+    border-bottom: 1px solid rgba(70, 69, 67, 0.08);
+    padding: 15px 0;
+}
+
+.nav-link {
+    color: #464543 !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: rgba(70, 69, 67, 0.05); /* Efecto hover sutil */
+}
+
+/* --- TABLAS --- */
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    background-color: #fcfbf9 !important;
+    color: #464543;
+    font-weight: 600;
+    text-transform: uppercase; /* Letras en mayúscula para las cabeceras */
+    font-size: 0.75rem;
+    letter-spacing: 0.8px;
+    border-bottom: 2px solid rgba(70, 69, 67, 0.1) !important;
+    padding: 15px 20px;
+}
+
+.table td {
+    padding: 15px 20px;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(70, 69, 67, 0.04);
+    font-size: 0.95rem;
+}
